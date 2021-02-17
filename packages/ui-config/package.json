@@ -1,0 +1,17 @@
+{
+  "name": "@hatch-team/ui-config",
+  "version": "1.200.2",
+  "description": "This package contains all configurations shared across App/UI packages",
+  "main": "./dist/index.js",
+  "module": "./dist-esm/index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -Rf dist && rm -Rf dist-esm && rm -Rf .storybook-dist && rm -Rf .next && rm -Rf .fab",
+    "clean:esm": "rm -Rf dist-esm",
+    "build": "yarn clean && yarn tsc",
+    "tsc": "$(npm bin)/tsc --build ./tsconfig.json && $(npm bin)/tsc --build ./tsconfig.esm.json"
+  },
+  "devDependencies": {
+    "typescript": "4.1.4"
+  }
+}

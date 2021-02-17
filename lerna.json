@@ -1,0 +1,11 @@
+{
+  "npmClient": "yarn",
+  "version": "1.200.2",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "message": "chore(release): publish\n\n[skip ci]"
+    },
+    "version": {}
+  }
+}
