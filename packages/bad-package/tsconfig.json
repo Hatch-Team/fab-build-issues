@@ -1,0 +1,10 @@
+{
+  "exclude": ["node_modules", "dist-esm", "dist", "**/*.story*", "**/*.spec*"],
+  "include": ["./src"],
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "target": "ES5"
+  }
+}

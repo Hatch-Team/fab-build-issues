@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@hatch-team/ui-config": "^1.200.2",
+    "bad-package": "^1.200.2",
     "react": "16.14.0",
     "react-dom": "16.13.1"
   },

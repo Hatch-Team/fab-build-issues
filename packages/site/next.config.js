@@ -15,9 +15,11 @@ const nextConfig = {
   webpack: (config, options) => {
     const { isServer } = options;
     if (isServer) {
+      console.log("Excluding unneeded server side packages")
       config.optimization.moduleIds = "named";
-      //TODO: make example for this
-      //config.externals.push("bad-package");
+      // Lets exclude this as we dont use it
+      // Without this the bad code will be pushed into the .next/serverless/pages and break when run
+      config.externals.push("bad-package");
     }
     return config;
   },

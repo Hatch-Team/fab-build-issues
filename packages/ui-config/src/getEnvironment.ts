@@ -1,4 +1,5 @@
 
+
 export const getEnvironment = (): string => {
-  return window?.location.host;
+   return window?.location.host;
 };
